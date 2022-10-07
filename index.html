@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+		integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<nav>
+		<div class="logo">
+			My LOGO
+		</div>
+		<div id="links" class="links show">
+			<a href="">Home</a>
+			<a href="">Laptops</a>
+			<a href="">Desktops</a>
+			<a href="">Monitors</a>
+			<a href="">About Us</a>
+		</div>
+		<div class="contact">
+			<button>Contact Us</button>
+		</div>
+		<div class="menu">
+			<i class="fa-solid fa-bars"></i>
+		</div>
+	</nav>
+	<section class="presentation">
+		<div class="introduction">
+			<div class="intro">
+				<h1>Laptop for the future</h1>
+				<p>The new 14 inch bezeless display oferring a 4k display with touch screen.</p>
+			</div>
+			<div class="cta">
+				<button class="cta-select">14 Inch</button>
+				<button class="cta-add">Add To Cart</button>
+			</div>
+		</div>
+		<div class="cover">
+			<img src="img/matebook.png" alt="">
+		</div>
+	</section>
+	<section class="grid">
+		<div>
+			<img src="img/laptop1.avif" alt="">
+		</div>
+		<div>
+			<img src="img/laptop2.avif" alt="">
+		</div>
+		<div>
+			<img src="img/laptop3.avif" alt="">
+		</div>
+		<div>
+			<img src="img/laptop6.avif" alt="">
+		</div>
+		<div>
+			<img src="img/laptop4.avif" alt="">
+		</div>
+		<div>
+			<img src="img/laptop5.avif" alt="">
+		</div>
+	</section>
+</body>
+
+<script>
+	const menu = document.querySelector(".menu")
+	const links = document.querySelector("#links")
+	
+	menu.addEventListener('click', ()=>{
+		links.classList.toggle("show")
+	})
+	
+	// menu.onclick = ()=>{
+	// 	console.log("Clicked");
+	// }
+
+</script>
+
+</html>
